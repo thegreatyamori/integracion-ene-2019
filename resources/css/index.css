@@ -1,0 +1,118 @@
+body {
+  background-color: #1C1B1D;
+  margin: 0;
+}
+
+@font-face {
+  font-family: codeBold;
+  src: url("../fonts/CODE\ Bold.otf") format("opentype");
+}
+
+@font-face {
+  font-family: codeLight;
+  src: url("../fonts/CODE\ Light.otf") format("opentype");
+}
+
+.code-bold {
+  font-family: codeBold;
+}
+
+.code-light {
+  font-family: codeLight;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 80% 20%;
+}
+
+/* ---------------------------------------------------------- */
+/* POSITION */
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+/* ---------------------------------------------------------- */
+
+/* ---------------------------------------------------------- */
+/* BLUR EFFECT */
+
+.blur[contenteditable] {
+  outline: none;
+}
+
+#box {
+  padding: 3% 3% 0 3%;
+  font-size: 12em;
+}
+
+.blur {
+  color: hsla(0,0%,0%,0);
+  text-shadow: #fff 0 0 60px;
+  transition: text-shadow 2s cubic-bezier(0, 1, 0, 1);
+}
+@-moz-document url-prefix() { .blur { text-shadow: #fff 0 0 20px; } } /* FF fix */
+
+#box:hover .blur {
+  text-shadow: #fff 0 0 2px;
+  transition: text-shadow 1s cubic-bezier(0, 0.75, 0, 1);
+}
+
+.♥ {
+  margin: 0 10px;
+  color: hsla(0,0%,0%,0);
+  text-shadow: red 0 0 2px;
+  transition: text-shadow 1s cubic-bezier(0, 1, 0, 1);
+}
+
+#box:hover .♥ {
+  text-shadow: red 0 0 100px;
+  transition: text-shadow 2s cubic-bezier(0, 0.75, 0, 1);
+}
+@-moz-document url-prefix() { #box:hover .♥ { text-shadow: red 0 0 20px; } } /* FF fix */
+
+/* ---------------------------------------------------------- */
+
+/* ---------------------------------------------------------- */
+/* SOFTWARE INFO DATE */
+
+.sw-margin {
+  margin-right: 3%;
+}
+
+.sw-date {
+  font-size: 6em;
+  font-weight: bold;
+  color: #300163;
+  text-shadow: 6px 5px 0px rgba(255, 255, 255, 1);
+}
+
+/* ---------------------------------------------------------- */
+
+/* ---------------------------------------------------------- */
+/* GUSTAVO VELASQUEZ */
+
+.center-vertical {
+  align-items: center;
+  font-size: 6em;
+  color: #0FC66A;
+}
+
+/* ---------------------------------------------------------- */
+
+/* ---------------------------------------------------------- */
+/* DIRECCION */
+
+.sw-address {
+  color: #300163;
+  font-size: 4em;
+}
