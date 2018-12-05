@@ -44,15 +44,16 @@ body {
 /* ---------------------------------------------------------- */
 
 /* ---------------------------------------------------------- */
-/* BLUR EFFECT */
+/* TITULO PRINCIPAL */
 
 .blur[contenteditable] {
   outline: none;
 }
 
-#box {
+.box {
   padding: 3% 3% 0 3%;
   font-size: 12em;
+  background-color: #300163;
 }
 
 .blur {
@@ -62,23 +63,26 @@ body {
 }
 @-moz-document url-prefix() { .blur { text-shadow: #fff 0 0 20px; } } /* FF fix */
 
-#box:hover .blur {
-  text-shadow: #fff 0 0 2px;
+.box:hover .blur {
+  text-shadow: #fff 0 0 1px;
   transition: text-shadow 1s cubic-bezier(0, 0.75, 0, 1);
 }
 
 .♥ {
   margin: 0 10px;
   color: hsla(0,0%,0%,0);
-  text-shadow: red 0 0 2px;
+  text-shadow: red 0 0 1px;
   transition: text-shadow 1s cubic-bezier(0, 1, 0, 1);
 }
 
-#box:hover .♥ {
+.box:hover .♥ {
   text-shadow: red 0 0 100px;
   transition: text-shadow 2s cubic-bezier(0, 0.75, 0, 1);
 }
-@-moz-document url-prefix() { #box:hover .♥ { text-shadow: red 0 0 20px; } } /* FF fix */
+@-moz-document url-prefix() { .box:hover .♥ { text-shadow: red 0 0 20px; } } /* FF fix */
+
+
+
 
 /* ---------------------------------------------------------- */
 
@@ -115,4 +119,33 @@ body {
 .sw-address {
   color: #300163;
   font-size: 4em;
+}
+
+/* ---------------------------------------------------------- */
+/* REDES SOCIALES */
+
+.icon {
+  position: relative;
+  height: 75px;
+  width: 75px;
+  transition: all 0.5s;
+}
+
+svg {
+  height: 100%;
+  width: 100%;
+}
+
+.icon-10 {
+  fill: #300163;
+}
+.icon-10:hover {
+  border: 3px solid white;
+  box-shadow: 0 0 0.75rem #300163;
+  border-radius: 100%;
+  fill: white;
+  stroke: #300163;
+  filter: drop-shadow(0 0 0.75rem #300163);
+  transform: scale(1.25);
+  transition: background-color 0.5s, transform 0.5s ease-out;
 }
