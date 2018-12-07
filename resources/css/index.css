@@ -1,8 +1,3 @@
-body {
-  background-color: #1C1B1D;
-  margin: 0;
-}
-
 @font-face {
   font-family: codeBold;
   src: url("../fonts/CODE\ Bold.otf") format("opentype");
@@ -21,9 +16,8 @@ body {
   font-family: codeLight;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 80% 20%;
+.sw-padding {
+  padding-top: 3%;
 }
 
 /* ---------------------------------------------------------- */
@@ -33,22 +27,10 @@ body {
   justify-content: center;
 }
 
-.left {
-  text-align: left;
-}
-
-.right {
-  text-align: right;
-}
-
 /* ---------------------------------------------------------- */
 
 /* ---------------------------------------------------------- */
 /* TITULO PRINCIPAL */
-
-.blur[contenteditable] {
-  outline: none;
-}
 
 .blur-text {
   padding: 3% 3% 0 3%;
@@ -57,16 +39,16 @@ body {
 
 .blur-01 {
   color: hsla(0,0%,0%,0);
-  text-shadow: #fff 0 0 60px;
+  text-shadow: #fff 0 0 32px;
   transition: text-shadow 2s cubic-bezier(0, 1, 0, 1);
-  z-index: 1000;
+  z-index: 500;
 }
 
 .blur-02 {
   color: hsla(0,0%,0%,0);
-  text-shadow: black 0 0 60px;
+  text-shadow: black 0 0 32px;
   transition: text-shadow 2s cubic-bezier(0, 1, 0, 1);
-  z-index: 1000;
+  z-index: 500;
 }
 @-moz-document url-prefix() { .blur-01 { text-shadow: #fff 0 0 20px; } } /* FF fix */
 
@@ -85,55 +67,18 @@ body {
   color: hsla(0,0%,0%,0);
   text-shadow: black 0 0 1px;
   transition: text-shadow 1s cubic-bezier(0, 1, 0, 1);
-  z-index: 1000;
+  z-index: 500;
 }
 
 .blur-text:hover .♥ {
-  text-shadow: black 0 0 100px;
+  text-shadow: black 0 0 32px;
   transition: text-shadow 2s cubic-bezier(0, 0.75, 0, 1);
 }
 @-moz-document url-prefix() { .blur-text:hover .♥ { text-shadow: black 0 0 20px; } } /* FF fix */
 
-.box-01 {
-  left: -6%;
-  width: 110%;
-  height: 38%;
-  background-color: #300163;
-  transform: skew(20deg);
-  position: absolute;
-  z-index: 0;
-}
-
-.box-02 {
-  left: 47%;
-  width: 45%;
-  height: 38%;
-  background-color: #fff;
-  transform: skew(20deg);
-  position: absolute;
-  z-index: 0;
-}
-
-.box-03 {
-  top: 38%;
-  left: -6%;
-  width: 110%;
-  height: 38%;
-  background-color: #300163;
-  transform: skew(20deg);
-  position: absolute;
-  z-index: 0;
-}
-
-.box-04 {
-  top: 38%;
-  left: 51.5%;
-  width: 45%;
-  height: 38%;
-  background-color: #fff;
-  transform: skew(20deg);
-  position: absolute;
-  z-index: 0;
+.sw-logo-carrera {
+  width: 50%;
+  height: 50%;
 }
 
 /* ---------------------------------------------------------- */
@@ -141,26 +86,69 @@ body {
 /* ---------------------------------------------------------- */
 /* SOFTWARE INFO DATE */
 
-.sw-margin {
-  margin-right: 3%;
-}
-
 .sw-date {
-  font-size: 6em;
   font-weight: bold;
   color: #300163;
   text-shadow: 6px 5px 0px rgba(255, 255, 255, 1);
+  position: relative;
+  z-index: 500;
 }
 
+.txt-2019 { font-size:12em; }
+.txt-17-ene { font-size:6em; }
+.txt-19 { font-size:9em; }
+
 /* ---------------------------------------------------------- */
+
+/* ---------------------------------------------------------- */
+/* CRONOGRAMA */
+
+.sw-crono {
+  font-weight: bold;
+  color: white;
+  text-shadow: 6px 5px 0px #0FC66A;
+  position: relative;
+  z-index: 500;
+}
+
+.txt-crono { font-size: 12em; }
+
+
+/* ---------------------------------------------------------- */
+
+/* ---------------------------------------------------------- */
+/* ORQUESTA INVITADA */
+
+.logo-tropicana {
+  width: 70%;
+  height: 70%;
+  position: relative;
+  z-index: 500;
+}
 
 /* ---------------------------------------------------------- */
 /* GUSTAVO VELASQUEZ */
 
-.center-vertical {
-  align-items: center;
-  font-size: 6em;
+.txt-gustavo {
   color: #0FC66A;
+  font-size: 6em;
+}
+
+.fixed-row {
+  background: #300163;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+.fixed-col {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.img-gustavo {
+  width: 100%;
+  height: 100%;
+  z-index: 500;
 }
 
 /* ---------------------------------------------------------- */
@@ -176,28 +164,284 @@ body {
 /* ---------------------------------------------------------- */
 /* REDES SOCIALES */
 
-.icon {
-  position: relative;
-  height: 75px;
-  width: 75px;
-  transition: all 0.5s;
+.txt-tropicana {
+  color: #0FC66A;
+  font-size: 3em;
 }
 
-svg {
-  height: 100%;
+.txt-gustavo-vel {
+  color: red;
+  font-size: 3em;
+}
+
+/* ---------------------------------------------------------- */
+/* TEMPORIZADOR */
+
+.txt-tempo { font-size: 10em; }
+
+.textDiv_Days, .textDiv_Hours,
+.textDiv_Minutes, .textDiv_Seconds {
+  color: white;
+}
+
+/* ---------------------------------------------------------- */
+/* RESPONSIVE DESIGN */
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+  */
+
+  @media (min-width: 1281px) {
+  
+  
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  .blur-text {
+    font-size: 9em;
+    padding: 6% 3% 0 3%;
+  }
+
+  .header {
+    padding-bottom: 6%;
+  }
+
+  .txt-2019 { font-size: 13em; }
+  .txt-17-ene { font-size: 5em; }
+  .txt-crono { font-size: 6em; }
+
+  .logo-tropicana {
+    width: 95%;
+    height: 95%;
+  }
+
+  .txt-tempo { font-size: 6em; }
+
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  .blur-text {
+    font-size: 9em;
+    padding: 6% 3% 0 3%;
+  }
+
+  .header { padding-bottom: 6%; }
+
+  .sw-logo-carrera {
+    width: 60%;
+    height: 60%;
+  }
+
+  .txt-2019 { font-size: 13em; }
+  .txt-17-ene { font-size: 5em; }
+  .txt-crono { font-size: 7em; }
+
+  .logo-tropicana {
+    width: 95%;
+    height: 95%;
+  }
+
+  .txt-gustavo { font-size: 5em; }
+  
+  .img-gustavo {
+    width: 50%;
+    height: 50%;
+  }
+
+  .txt-tempo { font-size: 6em; }
+
+
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  .blur-text {
+    padding: 6% 3% 0 3%;
+    font-size: 7em;
+  }
+
+  .header { padding-bottom: 6%; }
+
+  .sw-logo-carrera {
+    width: 80%;
+    height: 80%;
+  }
+
+  .txt-2019 { font-size: 15em; }
+  .txt-17-ene { font-size: 4em; }
+  .txt-19 { font-size: 8em; }
+  .txt-crono { font-size: 6em; }
+
+  .logo-tropicana {
+    width: 90%;
+    height: 90%;
+  }
+
+  .txt-gustavo { font-size: 4em; }
+  
+  .img-gustavo {
+    width: 50%;
+    height: 50%;
+  }
+
+  .txt-tempo { font-size: 4em; }
+
+  .txt-tropicana { font-size: 2em; }
+  .txt-gustavo-vel { font-size: 2em; }
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+
+  .blur-text {
+    padding: 20% 3% 0 3%;
+    font-size: 4em;
+  }
+
+  .header { padding-bottom: 20%; }
+
+  .sw-logo-carrera {
+    width: 90%;
+    height: 90%;
+  }
+
+  .sw-date {
+    position: relative;
+    z-index: 500;
+  }
+
+  .txt-2019 { font-size: 10em; }
+  .txt-17-ene { font-size: 2.5em; }
+  .txt-19 { font-size: 4em; }
+  .txt-crono { font-size: 3em; }
+
+  .logo-tropicana {
+    width: 95%;
+    height: 95%;
+  }
+
+  .txt-gustavo { font-size: 2.4em; }
+
+  .img-gustavo {
+    width: 50%;
+    height: 50%;
+  }
+
+  .sw-address { font-size: 2em; }
+
+  .txt-tempo { font-size: 2.5em; }
+
+  .txt-tropicana { font-size: 2em; }
+  .txt-gustavo-vel { font-size: 2em; }
+
+}
+
+
+/* TODO: Corregir la visualización */
+
+.box-01 {
   width: 100%;
+  height: 748px;
+  background-color: #300163;
+  position: absolute;
+  z-index: 0;
 }
 
-.icon-10 {
-  fill: #300163;
+.box-02 {
+  width: 50%;
+  height: 0;
+  border-left: 90px solid transparent;
+  border-top: 235px solid white;
+  right: 0;
+  position: absolute;
+  z-index: 0;
 }
-.icon-10:hover {
-  border: 3px solid white;
-  box-shadow: 0 0 0.75rem #300163;
-  border-radius: 100%;
-  fill: white;
-  stroke: #300163;
-  filter: drop-shadow(0 0 0.75rem #300163);
-  transform: scale(1.25);
-  transition: background-color 0.5s, transform 0.5s ease-out;
+
+.box-03 {
+  width: 45%;
+  height: 0;
+  border-left: 90px solid transparent;
+  border-top: 235px solid white;
+  right: 0;
+  top: 235px;
+  position: absolute;
+  z-index: 0;
+}
+
+/* TODO: Corregir la visualización */
+
+
+.box-04 {
+  width: 40%;
+  height: 0;
+  border-left: 90px solid transparent;
+  border-top: 278px solid #0FC66A;
+  right: 0;
+  top: 470px;
+  position: absolute;
+  z-index: 0;
+}
+
+.box-05 {
+  width: 100%;
+  height: 748px;
+  background-color: #0FC66A;
+  position: absolute;
+  top: 748px;
+  z-index: 0;
+}
+
+
+.box-06 {
+  width: 84.5%;
+  height: 0;
+  border-left: 190px solid transparent;
+  border-top: 440px solid white;
+  right: 0;
+  top: 1132px;
+  position: absolute;
+  z-index: 0;
+}
+.box-07 {
+  width: 9%;
+  height: 0;
+  border-right: 120 px solid transparent;
+  border-bottom: 300px solid #300163;
+  top: 1547px;
+  position: absolute;
+  z-index: 0;
 }

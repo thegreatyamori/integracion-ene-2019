@@ -6,5 +6,6 @@ Codigo fuente para la web de la Integración 2019 de la carrera de Ingenieria de
 
 - Animaciones bergaz
 - Fondo bergaz
-- Integración de google maps
-- Redes sociales
+- Falta hacer estilos para el iPhone 5S
+- Faltan descripciones de los artistas
+- Falta cronograma
