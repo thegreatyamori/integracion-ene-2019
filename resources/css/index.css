@@ -370,6 +370,42 @@
 
 }
 
+/* 
+  ##Device = iPhone 5/5S (Portrait)
+  ##Screen = B/w 320px to 568px
+*/
+
+@media (device-height : 568px)
+  and (device-width : 320px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    
+    .blur-text { font-size: 3.5em; }
+    .txt-17-ene { font-size: 2.3em; }
+    .txt-19 { font-size: 3.6em; }
+    .txt-gustavo { font-size: 2.2em; }
+    .txt-tropicana { font-size: 1.5em; }
+    .txt-gustavo-vel { font-size: 1.5em; }
+}
+
+/* 
+  ##Device = iPhone 5/5S (Landscape)
+  ##Screen = B/w 320px to 568px
+*/
+
+@media (device-height : 320px)
+  and (device-width : 568px)
+  and (-webkit-min-device-pixel-ratio: 2)
+  and (orientation : landscape) {
+    
+    .blur-text { 
+      padding: 8% 3% 0 3%;
+      font-size: 6em;
+    }
+    .txt-19 { font-size: 7em; }
+    .txt-crono { font-size: 5em; }
+    .sw-address { font-size: 3.5em; }
+}
+
 
 /* TODO: Corregir la visualización */
 
