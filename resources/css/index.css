@@ -134,6 +134,13 @@
   font-size: 6em;
 }
 
+.txt-gustavo-desc {
+  color: white;
+  font-size: 2.5em;
+  padding-left: 3%;
+  text-align: justify;
+}
+
 .fixed-row {
   background: #300163;
   margin-right: 0px;
@@ -234,7 +241,12 @@
   }
 
   .txt-tempo { font-size: 6em; }
-
+  .img-gustavo {
+    width: 50%;
+    height: 50%;
+  }
+  .txt-gustavo { font-size: 5em; }
+  .txt-gustavo-desc { padding-right: 3%; }
 }
 
 /* 
@@ -273,7 +285,9 @@
   }
 
   .txt-tempo { font-size: 6em; }
-
+  .txt-gustavo-desc {
+    padding-right: 3%;
+  }
 
 }
 
@@ -317,7 +331,10 @@
 
   .txt-tropicana { font-size: 2em; }
   .txt-gustavo-vel { font-size: 2em; }
-  
+  .txt-gustavo-desc {
+    font-size: 1.8em;
+    padding-right: 3%;
+  }
 }
 
 /* 
@@ -367,6 +384,10 @@
 
   .txt-tropicana { font-size: 2em; }
   .txt-gustavo-vel { font-size: 2em; }
+  .txt-gustavo-desc {
+    font-size: 1.6em;
+    padding-right: 3%;
+  }
 
 }
 
@@ -385,6 +406,7 @@
     .txt-gustavo { font-size: 2.2em; }
     .txt-tropicana { font-size: 1.5em; }
     .txt-gustavo-vel { font-size: 1.5em; }
+    .txt-gustavo-desc { font-size: 1.4em; }
 }
 
 /* 
