@@ -173,23 +173,23 @@ body {
 }
 
 .caveman:nth-child(1) .shape {
-  background-color: #D13433;
+  background-color: #0FC66A;
 }
 .caveman:nth-child(1) .shape .circle {
-  background-color: #932422;
+  background-color: #1c9356;
 }
 .caveman:nth-child(1) .shape .circle:after, .caveman:nth-child(1) .shape .circle:before {
-  background-color: #932422;
+  background-color: #1c9356;
 }
 
 .caveman:nth-child(2) .shape {
-  background-color: #932422;
+  background-color: #1c9356;
 }
 .caveman:nth-child(2) .shape .circle {
-  background-color: #D13433;
+  background-color: #0FC66A;
 }
 .caveman:nth-child(2) .shape .circle:after, .caveman:nth-child(2) .shape .circle:before {
-  background-color: #D13433;
+  background-color: #0FC66A;
 }
 
 .arm-right {
@@ -207,7 +207,7 @@ body {
 }
 .arm-right .club {
   position: absolute;
-  border-bottom: 110px solid #601513;
+  border-bottom: 110px solid #300163;
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
   height: 0;
@@ -219,7 +219,7 @@ body {
 .arm-right .club:after, .arm-right .club:before {
   position: absolute;
   content: "";
-  background-color: #601513;
+  background-color: #300163;
   border-radius: 50%;
   left: 0;
 }

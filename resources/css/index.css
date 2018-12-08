@@ -106,7 +106,7 @@
 .sw-crono {
   font-weight: bold;
   color: white;
-  text-shadow: 6px 5px 0px #0FC66A;
+  text-shadow: 6px 5px 50px #0FC66A;
   position: relative;
   z-index: 500;
 }
@@ -185,6 +185,8 @@
 }
 
 /* ---------------------------------------------------------- */
+
+/* ---------------------------------------------------------- */
 /* TEMPORIZADOR */
 
 .txt-tempo { font-size: 10em; }
@@ -195,9 +197,16 @@
 }
 
 /* ---------------------------------------------------------- */
+/* CONTACTO */
+
+.txt-contacto { font-size: 7em; }
+
+/* ---------------------------------------------------------- */
+
+/* ---------------------------------------------------------- */
 /* RESPONSIVE DESIGN */
 
-/* 
+/*
   ##Device = Desktops
   ##Screen = 1281px to higher resolution desktops
   */
@@ -250,6 +259,7 @@
   }
   .txt-gustavo { font-size: 5em; }
   .txt-gustavo-desc { padding-right: 3%; }
+  .txt-contacto { font-size: 4em; }
 }
 
 /* 
@@ -292,6 +302,7 @@
     padding-right: 3%;
   }
 
+  .txt-contacto { font-size: 4.8em; }
 }
 
 /* 
@@ -338,6 +349,8 @@
     font-size: 1.8em;
     padding-right: 3%;
   }
+
+  .txt-contacto { font-size: 3em; }
 }
 
 /* 
@@ -391,6 +404,8 @@
     font-size: 1.6em;
     padding-right: 3%;
   }
+
+  .txt-contacto { font-size: 2em; }
 
 }
 

@@ -18,9 +18,10 @@
   margin-left: 15px;
   margin-right: 15px;
   font-size: 70px;
+  z-index: 500;
 }
 
-.social .link span {
+.social .link i {
   display: block;
   position: absolute;
   text-align: center;
@@ -36,11 +37,6 @@
   transform: translateX(10px) rotate(360deg);
 }
 
-.social .link.google-plus {
-  background-color: tomato;
-  color: white;
-}
-
 .social .link.facebookTropi {
   background-color: red;
   color: white;
@@ -48,5 +44,10 @@
 
 .social .link.facebookGustavo {
   background-color: #0FC66A;
+  color: white;
+}
+
+.social .link.whatsapp {
+  background-color: #00E676;
   color: white;
 }
