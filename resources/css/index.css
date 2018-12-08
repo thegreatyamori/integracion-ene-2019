@@ -141,8 +141,11 @@
   text-align: justify;
 }
 
-.fixed-row {
+.bg-artist {
   background: #300163;
+}
+
+.fixed-row {
   margin-right: 0px;
   margin-left: 0px;
 }
